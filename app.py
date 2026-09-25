@@ -83,7 +83,7 @@ def run_research(topic: str):
     search_tool = DuckDuckGoSearchTool()
 
     researcher = Agent(
-        role="AI Research Analyst",
+        role="Resume Review Agent",
         goal=(
             "Research the user's topic using reliable web sources and produce "
             "a clear, evidence-based research report."
@@ -167,12 +167,12 @@ Keep the writing clear and suitable for a university-level reader.
 # -----------------------------
 
 st.set_page_config(
-    page_title="AI Research Agent",
+    page_title="Resume Review Agent",
     page_icon="🔎",
     layout="wide",
 )
 
-st.title("🔎 AI Research Agent")
+st.title("🔎 Resume Review Agent")
 st.write(
     "Enter a research topic. A single CrewAI agent will search the web "
     "with DuckDuckGo and write a structured research report using "
@@ -180,7 +180,7 @@ st.write(
 )
 
 st.info(
-    "This is a research assistant. For important academic, legal, medical, "
+    "This is a Resume Review Agent. For important academic, legal, medical, "
     "financial, or other high-stakes topics, verify the original sources."
 )
 
